@@ -5,8 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        #logo{
+            height: 80vh;
+            display: block;
+            margin:auto;
+            animation: sing 6s;
+            background-repeat: no-repeat;
+        }
+        body{
+            animation: backchange 5s;
+        }
+        @keyframes backchange{
+            from{
+                background: #EFED67;
+            }
+            to{
+                background:#FFFFFF;
+            }
+        }
+        @keyframes sing{
+            0%{
+                background-image: url("00-element/SVG/logo-02.svg");
+            }
+            30%{
+                background-image: url("00-element/SVG/logo-09.svg");
+            }
+            50%{
+                background-image: url("00-element/SVG/logo-05.svg");
+            }
+            60%{
+                background-image: url("00-element/SVG/logo-06.svg");
+            }
+            70%{
+                background-image: url("00-element/SVG/logo-07.svg");
+            }
+            75%{
+                background-image: url("00-element/SVG/logo-08.svg");
+            }
+            80%{
+                background-image: url("00-element/SVG/logo-07.svg");
+            }
+            85%{
+                background-image: url("00-element/SVG/logo-08.svg");
+            }
+            90%{
+                background-image: url("00-element/SVG/logo-09.svg");
+            }
+            100%{
+                background-image: url("00-element/SVG/logo-02.svg");
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+        <div id="logo"></div>
 </body>
 </html>
