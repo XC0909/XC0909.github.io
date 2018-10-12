@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        #logo{
-            height: 80vh;
-            display: block;
-            margin:auto;
-            animation: sing 6s;
-            background-repeat: no-repeat;
-        }
-        body{
-            animation: backchange 5s;
-        }
-        @keyframes backchange{
-            from{
-                background: #EFED67;
-            }
-            to{
-                background:#FFFFFF;
-            }
-        }
-        @keyframes sing{
-            0%{
-                background-image: url("00-element/SVG/logo-02.svg");
-            }
-            30%{
-                background-image: url("00-element/SVG/logo-09.svg");
-            }
-            50%{
-                background-image: url("00-element/SVG/logo-05.svg");
-            }
-            60%{
-                background-image: url("00-element/SVG/logo-06.svg");
-            }
-            70%{
-                background-image: url("00-element/SVG/logo-07.svg");
-            }
-            75%{
-                background-image: url("00-element/SVG/logo-08.svg");
-            }
-            80%{
-                background-image: url("00-element/SVG/logo-07.svg");
-            }
-            85%{
-                background-image: url("00-element/SVG/logo-08.svg");
-            }
-            90%{
-                background-image: url("00-element/SVG/logo-09.svg");
-            }
-            100%{
-                background-image: url("00-element/SVG/logo-02.svg");
-            }
+        * {
+            margin: 0;
         }
 
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .atbottom {
+            position: fixed;
+            bottom: 0;
+        }
+
+        #page01 {
+            background-image: url("00-element/banner01.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
+
 <body>
-        <div id="logo"></div>
+
+    <div id="page01">
+    </div>
+
+    <div class="container">
+        <div class="atbottom">
+            <div class="navbar">
+                <div id="setting"><img style="height:60px;" src="00-element/SVG/bamboo.svg" alt="setting"></div>
+                <div id="nav-erhu"><img style="height:60px;" src="00-element/SVG/nav01.svg" alt="erhu"></div>
+                <div id="nav-guzheng"><img style="height:60px;" src="00-element/SVG/nav02.svg" alt="guzheng"></div>
+                <div id="logo"><img style="height:60px;" src="00-element/SVG/logo.svg" alt="logo"></div>
+                <div id="nav-pipa"><img style="height:60px;" src="00-element/SVG/nav03.svg" alt="pipa"></div>
+                <div id="nav-gu"><img style="height:60px;" src="00-element/SVG/nav04.svg" alt="gu"></div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
