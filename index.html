@@ -14,6 +14,7 @@
         .container {
             max-width: 1140px;
             margin: 0 auto;
+            position: relative;
         }
 
         .navbar {
@@ -22,8 +23,15 @@
         }
 
         .atbottom {
-            position: fixed;
+            width: 100%;
+            position: absolute;
             bottom: 0;
+        }
+
+        #setting {
+            position: fixed;
+            top: 10vh;
+            right: 10vh;
         }
 
         #page01 {
@@ -39,11 +47,12 @@
 
     <div id="page01">
     </div>
-
+    <div class="container">
+        <div id="setting"><img style="height:60px;" src="00-element/SVG/bamboo.svg" alt="setting"></div>
+    </div>
     <div class="container">
         <div class="atbottom">
             <div class="navbar">
-                <div id="setting"><img style="height:60px;" src="00-element/SVG/bamboo.svg" alt="setting"></div>
                 <div id="nav-erhu"><img style="height:60px;" src="00-element/SVG/nav01.svg" alt="erhu"></div>
                 <div id="nav-guzheng"><img style="height:60px;" src="00-element/SVG/nav02.svg" alt="guzheng"></div>
                 <div id="logo"><img style="height:60px;" src="00-element/SVG/logo.svg" alt="logo"></div>
